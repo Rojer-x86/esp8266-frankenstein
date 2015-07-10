@@ -86,7 +86,7 @@ CONSOLE_CMD(getenv, 2, 2,
 CONSOLE_CMD(saveenv, 1, 1, 
 	    do_saveenv, NULL, NULL, 
 	    "Write environment to flash" 
-	    HELPSTR_NEWLINE "setenv var value"
+	    HELPSTR_NEWLINE "saveenv"
 );
 
 CONSOLE_CMD(envreset, 1, 1, 
