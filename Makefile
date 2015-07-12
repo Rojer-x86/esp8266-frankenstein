@@ -27,7 +27,7 @@ CFLAGS+=-D__ets__ \
 	-DPBUF_RSV_FOR_WLAN \
 	-DEBUF_LWIP
 
-ifeq ($(ANTARES_INSTALL_DIR),)
+ifeq ($(ANTARES_INSTALL_DIR),$(ANTARES_DIR))
 antares:
 	git clone $(GITURL) $(ANTARES_DIR) -b$(BRANCH)
 	@echo "I have fetched the antares sources for you to $(ANTARES_DIR)"
