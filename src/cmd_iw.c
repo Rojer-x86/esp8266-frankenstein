@@ -128,7 +128,7 @@ static int  do_apconfig(int argc, const char* const* argv)
 	
         config.authmode = authmode;
 
-        wifi_softap_set_config(&config);
+        wifi_softap_set_config_current(&config);
 
 	return 0;
 }
